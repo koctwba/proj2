@@ -18,6 +18,8 @@ input, textarea {color:inherit;font-size:inherit;
        font-family:inherit;
        vertical-align: middle}
 button{outline:0}
+.position{position: absolute;
+width: 100%; top:calc(100% + 140px);}
 /******************** header *********************/
 #header{padding-top: 40px;}
 #header::after{content: ''; display: block; clear: both;}
@@ -51,3 +53,11 @@ button{outline:0}
 #nav .depth2 a:first-child{margin-left: 2.3rem;}
 #nav .depth2 a::after{width: 1px; height: 105px;color: #000000;}
 /******************** footer *********************/
+#footer{width: 100%; height: 400px; position: absolute;
+        bottom: 0; right: 0; display: none;
+        background-color: #D2C5BD;}
+#footer::after{content: ''; clear: both; display: block;}
+#footer .info li{float: left; margin-top: 70px;}
+#footer .info ul:after{content: ''; display: block; clear: both;}
+#footer .info ul li{font-size: 0.8rem;
+ display: block;margin-left: 10px;}

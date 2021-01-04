@@ -2,55 +2,111 @@
 #header{}
 #section{}
 #footer{}
-
+.inner{width: 1280px; margin: 0 auto}
+h2{font-weight: 700; font-size: 1.05rem;color: #707070;
+   border-right: 1px solid #C9A994;
+   display: inline-block;
+   padding-right: 12px;}
+h3{font-weight: normal; font-size: 1rem; color: #707070;
+   display: inline-block;
+   margin-left: 8px;}
+.title{width: 100%; margin: 0 auto; text-align: center;
+   margin-bottom: 35px;}
 /*********************section****************************/
-#sec1{width: 100%; height: 938px;}
+#sec1 #pages{width: 100%; height: 938px;}
 .wanky_pages {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      -webkit-perspective: 1200px;
-      -moz-perspective: 1200px;
-      perspective: 1200px;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-    }
+  position: absolute; z-index: 99999999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .wanky_page {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      visibility: visible;
-      overflow: auto;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);}
-      background-size: contain;}
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: auto;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
 .wanky_current_page { visibility: visible; }
+
 .wanky_page_top { z-index: 4; }
 
-.wanky_page { text-align: center; }
-.wanky_page h1 {
-      display: none;
-      /*color: #FFFFFF;
-      font-size: 75px;*/}
-.wanky_pages a {
-      display: none;
-      /*color: #FFFFFF;
-      font-size: 30px*/
-    }
-.wanky_page[data-pageid="1"] { background-color: #0ac2d2 }
-.wanky_page[data-pageid="2"] { background-color: #fdc162 }
-.wanky_page[data-pageid="3"] {
-    background: url(../images/main_slider_5.jpg)no-repeat;
-    background-size: contain;
-}
-.wanky_page[data-pageid="3"] img{width: 100%;}
+/**
+* Page styles
+*/
 
+
+body { background-color: transparent }
+
+.wanky_page { text-align: center; }
+.wanky_page::before{content: '';color: red;
+width: 100px; height: 5px}
+.wanky_page h1 {
+  font-weight: normal; font-size: 30px;
+  display: block;
+  color: #fff;position: absolute; top: 240px; right: 300px;
+}
+.wanky_page span{font-size: 15px;}
+.wanky_pages a {
+  /*color: #FFFFFF;
+  font-size: 30px*/
+  width: 40px; height: 5px;
+  position: absolute; top: 20px; right: 30px;
+  background-image: url(../images/slide_line.svg);
+
+}
+
+.wanky_page[data-pageid="1"] {
+  background: url(../images/main_slider_5.jpg)no-repeat;
+  background-size: contain;}
+
+.wanky_page[data-pageid="2"] {
+  background: url(../images/main_slider_6.jpg)no-repeat;
+  background-size: contain;
+}
+
+.wanky_page[data-pageid="3"] { background-color: #fd6a62 }
+/********************* sec2 ****************************/
+#sec2 div{float:left; margin-left: 40px;}
+#sec2 .aalto{width: calc(50% - 80px); height: 400px;
+position: relative; margin-right: 40px;}
+#sec2 p{font-size: 1.3rem; color: #5D2D10; font-weight: bold;
+               position: absolute; top: 35px; left: 35px;
+               font-family: adobe-caslon-pro, serif;
+               }
+#sec2 span::after{content: ''; width: 300px; display: block;
+  border:1px solid #88451E; opacity: 0.5;
+  position: absolute; left: 20px; top: 65px;}
+#sec2 .view_more{font-size: 0.9rem;
+position: absolute; top: 77px; left: 195px;
+font-family: 'Nanum Gothic', sans-serif; font-weight: normal;}
+#sec2 .pirkka{width: calc(50% - 80px); height: 400px;
+  position: relative;}
+#sec2 .kiki{width: 100%; height: 400px; margin-top: 70px;
+position: relative; margin-bottom: 4.5rem;}  
+#sec2 .kiki p{font-size: 1.3rem; color: #fff; font-weight: bold;
+    position: absolute; top: 80px; left: 770px;
+    font-family: adobe-caslon-pro, serif;}
+#sec2 .kiki span::after{content: ''; width: 300px; display: block;
+border:1px solid #fff; opacity: 0.5;
+position: absolute; top: 110px; left: 750px; }
+#sec2 .kiki .view_more{font-size: 0.9rem; color: #D2C5BD;
+position: absolute; top: 125px; left: 960px;
+font-family: 'Nanum Gothic', sans-serif; font-weight: normal;}
 /*********************footer****************************/
