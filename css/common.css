@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*googleips 웹폰트 css 파일 불러오기*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {margin:0; padding:0;}
+html{font-size: 15px;}
+body{ font-size:15px;
+      color:#6f6f6f;
+      font-family: 'Nanum Gothic', sans-serif;
+      font-weight: 400; }
+ul, ol, li{list-style-type:none}
+img, fieldset{border:none;vertical-align: middle}/*vertical-align 은 img, fieldset 에만 먹힘 p에는 안먹힘*/
+hr {clear:both;border:none}
+a {color:inherit;text-decoration:none}
+table{border-collapse:collapse}
+input, textarea {color:inherit;font-size:inherit;
+       font-family:inherit;
+       vertical-align: middle}
+button{outline:0}
+/******************** header *********************/
+#header{padding-top: 40px;}
+#header::after{content: ''; display: block; clear: both;}
+#logo{float: left; width: 200px; height: 60px;
+      background: url(../images/logo.png) no-repeat;
+      background-size: contain;
+      margin-left: 130px;
+      margin-right: 90px;}
+#logo img{width: 100%;}
+#header button{border: none; margin-top: 10px;
+      width: 40px; height: 40px;}
+.header_icon{float: right; margin-right: 80px;}
+.search{
+        background: url(../images/search.svg)no-repeat;
+        background-size: contain;margin-right: 45px;}
+.language{background: url(../images/language.svg)no-repeat;
+          
+          background-size: contain;
+}
+/******************** nav *********************/
+#nav{width: 580px; height: 100px; float: left;}
+#nav a{font-size: 1rem;}
+#nav .depth1 li{float: left; margin-right: 4rem; margin-top: 20px;}
+#nav .depth2{width: 478px; height: 130px;
+             background: url(../images/nav_back.jpg)no-repeat;
+             background-size: contain;
+             margin-top: 1.35rem; display: none;
+}
+#nav .depth2 a{font-size: 0.8rem; color: #8D7262;
+                }
+#nav .depth2 a:first-child{margin-left: 2.3rem;}
+#nav .depth2 a::after{width: 1px; height: 105px;color: #000000;}
+/******************** footer *********************/
