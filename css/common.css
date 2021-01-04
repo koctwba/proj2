@@ -18,10 +18,8 @@ input, textarea {color:inherit;font-size:inherit;
        font-family:inherit;
        vertical-align: middle}
 button{outline:0}
-.position{position: absolute;
-width: 100%; top:calc(100% + 140px);}
 /******************** header *********************/
-#header{padding-top: 40px;}
+#header{padding-top: 40px; margin-bottom: 40px;}
 #header::after{content: ''; display: block; clear: both;}
 #logo{float: left; width: 200px; height: 60px;
       background: url(../images/logo.png) no-repeat;
@@ -36,11 +34,10 @@ width: 100%; top:calc(100% + 140px);}
         background: url(../images/search.svg)no-repeat;
         background-size: contain;margin-right: 45px;}
 .language{background: url(../images/language.svg)no-repeat;
-          
           background-size: contain;
 }
 /******************** nav *********************/
-#nav{width: 580px; height: 100px; float: left;}
+#nav{width: auto; height: auto; float: left;}
 #nav a{font-size: 1rem;}
 #nav .depth1 li{float: left; margin-right: 4rem; margin-top: 20px;}
 #nav .depth2{width: 478px; height: 130px;
