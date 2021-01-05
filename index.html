@@ -54,37 +54,58 @@ _gaq.push(['_trackPageview']);
   <header id="header">
     <h1 id="logo"><a href="index.html"></a></h1>
     <nav id="nav">
-      <ul class="depth1">
-        <li><a href="#">회사소개</a>
-          <ul class="depth2">
-            <li><a href="#">소개말</a></li>
-            <li><a href="#">회사이념</a></li>
-            <li><a href="#">2nd Cycle</a></li>
-          </ul>
-        </li>
-        <li><a href="#">제품</a>
-        </li>
-        <li><a href="#">공간</a>
-          <ul class="depth2">
-            <li><a href="#">Spaces</a></li>
-            <li><a href="#">카달로그</a></li>
-          </ul>
-        </li>
-        <li><a href="#">커뮤니티</a>
-          <ul class="depth2">
-            <li><a href="#">공지사항</a></li>
-          </ul>
-        </li>
-        <li><a href="#">지점</a>
-          <ul class="depth2">
-            <li><a href="#">지점 찾기</a></li>
-            <li><a href="#">대표지점</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="inner">
+        <ul class="depth1" >
+            <li><a href="#">회사소개</a>
+              <div class="nav_box">
+                  <ul class="depth2">
+                   <li><a href="#">소개말</a></li>
+                   <li><a href="#">회사이념</a></li>
+                   <li><a href="#">2nd Cycle</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">제품</a>
+              <!--<div class="nav_box">          
+                <ul class="depth2">
+                    <li><a href="#">에스크로이체</a></li>
+                    <li><a href="#">자동이체서비스</a></li>
+                 </ul>
+               </div>-->
+            </li>
+            <li><a href="#">공간</a>
+              <div class="nav_box">
+                <ul class="depth2">
+                    <li><a href="#">Spaces</a></li>
+                    <li><a href="#">카탈로그</a></li>
+                 </ul>
+                 </div>
+            </li>
+            <li><a href="#">커뮤니티</a>
+              <div class="nav_box">
+                <ul class="depth2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">문의하기</a></li>
+                 </ul>
+              </div>
+            </li>
+            <li><a href="#">지점</a>
+              <div class="nav_box">
+                <ul class="depth2">
+                    <li><a href="#">지점 찾기</a></li>
+                    <li><a href="#">대표 지점</a></li>
+                 </ul>
+               </div>
+            </li>
+        </ul>
+      </div>       
     </nav>
     <div class="header_icon">
       <button class="search"></button>
+        <div class="search_click">
+          <input type="text" value="검색어를 입력하세요" name="input_search" class="type_text" title="검색어 입력" maxlength="255"  />
+          <input type="submit" value="검색" id="Btn" class="type_btn" title="검색" />
+       </div>
       <button class="language"></button>
     </div>
   </header>
@@ -173,22 +194,43 @@ _gaq.push(['_trackPageview']);
         <p class="txt_exp">Artek products convey a relaxed familiarity, travelling easily between public and private spheres.<br>
           Presented here are scenes from homes and public spaces, alongside images of Artek fairs and<br>
           exhibitions, each image showcasing the flexibility and transversality of Artek designs.</p>
+        <a href="#">View more</a> 
+      </div>
+      <div class="box_img_r">
+        <img src="images/spaces_1.jpg" alt="인테리어 배너"></div>
+      <div class="box_txt_r">
+        <p class="txt_title_r">아르텍이 디자인한 공간들</p>
+        <span></span>
+        <p class="txt_sub_title_r">Office</p>
+        <p class="txt_exp_r">오피스와 응접실, 학교부터 개인 스튜디오까지-<br>
+          모든 곳을 아우르는 디자인을 더 둘러보세요.</p>
+        <a href="#">더 둘러보기</a> 
       </div>
     </div>
   </section>
-  <section id="sec5"></section>
+  <section id="sec5">
+    <div class="sec5_back">
+      <div class="inner">
+        <h2>Newsletter</h2>
+        <h3>뉴스레터 신청</h3>
+        <p>Subscribe to the Artek Newsletter</p>
+        <input type="text" value="메일 주소를 입력해주세요" name="text">
+        <button class="newletter_btn"></button>
+      </div>
+    </div>
+  </section>
   <footer id="footer">
     <div class="inner">
       <ul class="info">
         <li class="contact">Contact
-          <ul>
+          <ul class="info_list">
             <li>General enquiries : info@artek.fi</li>
             <li>Press : press@artek.fi</li>
             <li>Sales : sales@artek.fi</li>
           </ul>
         </li>
         <li class="legal">Legal
-          <ul>
+          <ul class="info_list">
             <li>Imprint</li>
             <li>Privacy Statement</li>
             <li>Distribution Rights</li>
@@ -196,6 +238,12 @@ _gaq.push(['_trackPageview']);
         </li>
         <li class="contacts">Careers</li>
       </ul>
+      <button class="top">↑<br>TOP</button>
+      <div class="footer_sns">
+        <button class="insta"></button>
+        <button class="facebook"></button>
+        <button class="twitter"></button>
+      </div>
     </div>
   </footer>
 </div>

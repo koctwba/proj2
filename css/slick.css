@@ -136,7 +136,8 @@ position: absolute; top: calc((555px / 2) - 6px); right: -70px;}
 #sec3 .slick-dots{position: absolute; left: 40px; bottom: 15px;}
 #sec3 .slick-dots li{display: inline-block;margin-right: 15px;}
 #sec3 .slick-dots li button{text-indent: -9999999px;
-width: 40px; height: 3px; color: ##B2B2B2;}
+width: 40px; height: 3px; background-color: #b2b2b2;
+border: none;}
 #sec3 .slick-dots li.slick-active button{
     width: 60px; background-color: #AC4416;}
 
