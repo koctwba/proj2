@@ -14,18 +14,30 @@ $(function(){
     }
    )}
 })
-    $('.aalto').hover(function(){
+    /*$('.aalto').hover(function(){
         $('.aalto img').css({'opacity':'0.5'});
         $('.aalto img').css({'transform':'scale(1.1)'});
         $('.aalto p').css({'color':'#95340A'});
-        $('.aalto span::after').css({'color':'#999999'});
-        $('.aalto .view_more').css({'color':'#A38C7E'});
+        $('#sec2 .aalto span').css({'border-color':'#A38C7E'});
+        $('#sec2 .aalto .view_more').css({'color':'#897970'});
     },function(){
         $('.aalto img').css({'opacity':'1'});
         $('.aalto img').css({'transform':'scale(1)'});
         $('.aalto p').css({'color':'#5D2D10'});
-        $('.aalto span::after').css({'color':'#88451E'});
-        $('.aalto .view_more').css({'color':'#A38C7E'});
+        $('#sec2 .aalto span').css({'border-color':'#88451E'});
+        $('#sec2 .aalto .view_more').css({'color':'#522307'});
     })
+
+    $('#sec2 div').each(function(){
+        $(this).hover(function(){
+            var f_img = $(this).find('img')
+            f_img.css()
+             $('#sec2 div img').css({'opacity':'0.5'});
+             $('#sec2 div img').css({'transform':'scale(1.1)'});
+             $('#sec2 p').css({'color':'#95340A'});
+             $('#sec2 span').css({'border-color':'#A38C7E'});
+             $('#sec2 .view_more').css({'color':'#897970'});
+        },function(){})
+    })*/
 
 })//jq end
