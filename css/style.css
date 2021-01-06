@@ -60,7 +60,7 @@ body { background-color: transparent }
 .wanky_page::before{content: '';color: red;
 width: 100px; height: 5px}
 .wanky_page h1 {
-  font-weight: normal; font-size: 30px;
+  font-weight: normal; font-size: 2rem;
   display: block;font-family: adobe-caslon-pro, serif;
   color: #fff;position: absolute; top: 240px; right: 320px;
 }
@@ -133,32 +133,33 @@ width: 100px; height: 5px}
 }
 .wanky_page[data-pageid="2"] h1{
   color: #25160F;
-  position: absolute; top: 650px; left: -600px;
+  position: absolute; top: 550px; left: -600px;
   }
 .wanky_page[data-pageid="2"] span{
   font-family: 'Nanum Gothic', sans-serif;
   color: #888888;
+  position: relative; bottom:-70px; left: 130px;
 }
 .wanky_page[data-pageid="2"] span::after{
   content: ''; display: block;
-  width: 430px; height: 2px; background-color: red;
+  width: 250px; height: 2px; background-color: #A7795D;
   border-radius: 20px;
-  position: relative; top: 100px; right: 50px;
+  position: absolute; top: -25px; right: 50px;
   z-index: 99999999999;
 }
 .wanky_page[data-pageid="2"] p:before{
 content: ''; display: block;
-width: 2px; height: 16px; background-color: red;
+width: 2px; height: 16px; background-color: #A7795D;
 border-radius: 20px;
-position: absolute; top:35.5px; right: -98px;
+position: absolute; top:46px; right: 669px;
 transform: rotate(-25deg);
 z-index: 9999999999;
 }
 .wanky_page[data-pageid="2"] p::after{
 content: ''; display: block;
-width: 2px; height: 16px; background-color: red;
+width: 2px; height: 16px; background-color: #A7795D;
 border-radius: 20px;
-position: absolute; top:48.5px; right: -98px;
+position: absolute; top:58px; right: 669px;
 transform: rotate(25deg);
 z-index: 9999999999;
 }
@@ -293,14 +294,12 @@ font-size: 1rem; color: #8D7262;
 position: absolute; top: 250px; right: 170px;
 z-index: 999999;}                    
 /********************* sec4 ****************************/
-.parallax-window{background-color: transparent;
-                 min-height: 700px;}
-              
 .sec4_box{background-color: #D8C6BC;
           width: 100%; height: 750px;
           position: relative;}
 .sec4_box .box_img{width: 50%;float: left;}
 .sec4_box .box_img img{width: 100%; padding-top: 40px;}
+
 .box_txt{
   float: left; width: calc(50% - 30px); box-sizing: border-box;
   padding-left: 20px;padding-right: 20px;

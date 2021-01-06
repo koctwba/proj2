@@ -139,5 +139,6 @@ position: absolute; top: calc((555px / 2) - 6px); right: -70px;}
 width: 40px; height: 3px; background-color: #b2b2b2;
 border: none;}
 #sec3 .slick-dots li.slick-active button{
+    transition: 0.7s;
     width: 60px; background-color: #AC4416;}
 

@@ -14,6 +14,17 @@ $(function(){
     }
    )}
 })
+//패럴랙스
+var wd = $(window);
+$('.box_img img').each(function(){
+  var bg = $(this);
+  wd.scroll(function(){
+    var yPos = -(wd.scrollTop() / 3); 
+      //배경이미지의 위치는 나눠지는 숫자로 조절
+    var coords = '50%' + yPos + 'px';
+    bg.css({backgroundPosition:coords});
+  });
+}); //패럴렉스 end
     /*$('.aalto').hover(function(){
         $('.aalto img').css({'opacity':'0.5'});
         $('.aalto img').css({'transform':'scale(1.1)'});
