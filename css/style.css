@@ -295,7 +295,7 @@ position: absolute; top: 250px; right: 170px;
 z-index: 999999;}                    
 /********************* sec4 ****************************/
 .sec4_box{background-color: #D8C6BC;
-          width: 100%; /*height: 750px;*/
+          width: 100%; height: 780px;
           position: relative;}
 .sec4_box::after{clear: both; content: ''; display: block;}
 .sec4_box .box_img{width: 50%;float: left;}
@@ -337,13 +337,15 @@ position: absolute; top: 65px; right: 678px; z-index: 9999999;}
 .sec4_box_two::after{content: '';display: block;clear: both;}
 .box_img_r{width: 50%;float: right;
           } 
-.box_img_r img{width: 100%; transform: translate(0,-150px);
-               padding-left: 50px; padding-top: 0px;
+.box_img_r img{width: 100%; transform: translate(0,-250px);
+               padding-left: 50px;
                box-sizing: border-box;}
 .box_txt_r{ position: relative;
            float: left; width: calc(50% - 30px); box-sizing: border-box;
            padding-left: 20px;padding-right: 20px;
-           margin-left: 30px; text-align: right;
+           margin-left: 30px;
+           transform: translate(0, -90px);
+           text-align: right;
                }
 .box_txt_r::after{content: ''; display: block;
                 width: 2px; height: 330px; background-color: #707070;
