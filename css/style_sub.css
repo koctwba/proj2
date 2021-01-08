@@ -132,7 +132,7 @@ button{outline:0}
                   position: relative; bottom: 0;}
 .products_explore img{transition: 0.5s;}
 .products_explore:hover img{opacity: 0.5;}
-.products_explore:hover p{color: #95340A;}
+.products_explore:hover p{color: #8D7262;}
 .products_explore:hover span{color: #8D7262;}
 .products_explore:hover span::before{color: #8D7262;}                  
 .products_explore p{
