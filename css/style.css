@@ -151,7 +151,7 @@ width: 100px; height: 5px}
 content: ''; display: block;
 width: 2px; height: 16px; background-color: #A7795D;
 border-radius: 20px;
-position: absolute; top:46px; right: 669px;
+position: absolute; top:43px; right: 662px;
 transform: rotate(-25deg);
 z-index: 9999999999;
 }
@@ -159,7 +159,7 @@ z-index: 9999999999;
 content: ''; display: block;
 width: 2px; height: 16px; background-color: #A7795D;
 border-radius: 20px;
-position: absolute; top:58px; right: 669px;
+position: absolute; top:56px; right: 662px;
 transform: rotate(25deg);
 z-index: 9999999999;
 }
@@ -295,8 +295,9 @@ position: absolute; top: 250px; right: 170px;
 z-index: 999999;}                    
 /********************* sec4 ****************************/
 .sec4_box{background-color: #D8C6BC;
-          width: 100%; height: 750px;
+          width: 100%; /*height: 750px;*/
           position: relative;}
+.sec4_box::after{clear: both; content: ''; display: block;}
 .sec4_box .box_img{width: 50%;float: left;}
 .sec4_box .box_img img{width: 100%; padding-top: 40px;}
 
@@ -332,21 +333,22 @@ position: absolute; top: 65px; right: 678px; z-index: 9999999;}
 .box_txt a::before{content: ''; display: inline-block;
                    width: 25px; height: 3px;
                    background-color: #AF8B76;
-                   margin-left: 3px;margin-right: 10px;} 
+                   margin-left: 3px;margin-right: 10px;}
+.sec4_box_two::after{content: '';display: block;clear: both;}
 .box_img_r{width: 50%;float: right;
           } 
-.box_img_r img{width: 100%;
-               padding-left: 50px; padding-top: 120px;
+.box_img_r img{width: 100%; transform: translate(0,-150px);
+               padding-left: 50px; padding-top: 0px;
                box-sizing: border-box;}
-.box_txt_r{
-           float: right; width: calc(50% - 30px); box-sizing: border-box;
+.box_txt_r{ position: relative;
+           float: left; width: calc(50% - 30px); box-sizing: border-box;
            padding-left: 20px;padding-right: 20px;
            margin-left: 30px; text-align: right;
                }
 .box_txt_r::after{content: ''; display: block;
                 width: 2px; height: 330px; background-color: #707070;
                 position: absolute;
-                bottom: -420px; left: 730px; z-index: 9999999;}
+                bottom: 0px; right: 0px; z-index: 9999999;}
 .txt_title_r{font-family: 'Nanum Gothic', sans-serif;
             font-size: 1.7rem; color: #25160F;
              padding-top: 200px; display: block;
@@ -380,7 +382,8 @@ position: absolute; top: 65px; right: 678px; z-index: 9999999;}
 /********************* sec5 ****************************/
 #sec5 .sec5_back{width: 100%; height: 280px;
                  background-color: #E3DEDA;
-                 position: absolute; bottom: -390px; right: 0;}
+                 position: relative;
+                 /*position: absolute; bottom: -390px; right: 0;*/}
 #sec5 .sec5_back h2{margin-left: 40px;}
 #sec5 .sec5_back h2, #sec5 .sec5_back h3{margin-top: 120px;}
 #sec5 .sec5_back p{font-size: 0.82rem;color: #A38C7E;

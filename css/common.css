@@ -102,8 +102,9 @@ button{outline:0}
                         padding-bottom: 5px;}                              
 /******************** footer *********************/
 #footer{width: 100%; height: 400px;
-        position: absolute;
-        bottom: -790px; right: 0; display: block;
+        position: relative;
+        /*position: absolute;
+        bottom: -790px; right: 0; */display: block;
         background-color: #D2C5BD;}
 #footer::after{content: ''; clear: both; display: block;}
 #footer .info{margin-left: 40px;}
