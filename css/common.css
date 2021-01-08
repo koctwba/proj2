@@ -19,7 +19,7 @@ input, textarea {color:inherit;font-size:inherit;
        vertical-align: middle}
 button{outline:0}
 /******************** header *********************/
-#header{padding-top: 45px; margin-bottom: 40px;}
+#header{padding-top: 45px; margin-bottom: 25px;}
 #header::after{content: ''; display: block; clear: both;}
 #logo{float: left; width: 200px; height: 60px;
       background: url(../images/logo.png) no-repeat;
