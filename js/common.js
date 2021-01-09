@@ -2,7 +2,8 @@ $(function(){
     $('.top').click(function(){
         $('body,html').animate({scrollTop:0},1000);
     })
-    var sta = 1;
+
+    /*var sta = 1;
     $('.search').click(function(){
        if (sta == 1) {
         $('.search_click').fadeIn(700);
@@ -13,7 +14,36 @@ $(function(){
         sta = 1;    
     }
    )}
-})
+})*/
+     var sta = 1;
+     $('.search').click(function(){
+      if (sta == 1) {
+        $('.search input').addClass('on');
+        $('.search input').fadeIn('on');
+        $('.search input').css({'width':'180px'})
+        $('.search img').fadeOut();
+        sta = 2;
+      }else {
+        $('.search input').removeClass('on');
+        $('.search input').fadeOut('on');
+        $('.search input').css({'width':'0px'})
+        $('.search img').fadeIn();
+        sta = 1;
+      }
+     })
+
+$(document).ready(function() {
+    var wd = $(window);
+    $('.paral').each(function(){
+      var bg = $(this);
+      wd.scroll(function(){
+        var yPos = -(wd.scrollTop() / 2); 
+          //나눠지는 숫자가 작을 수록 속도가 빠름
+        var coords = '50%' + yPos + 'px';
+        bg.css({backgroundPosition:coords});
+      });
+    });
+  });
 //패럴랙스
 var wd = $(window);
 $('.box_img img').each(function(){

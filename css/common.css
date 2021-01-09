@@ -18,6 +18,8 @@ input, textarea {color:inherit;font-size:inherit;
        font-family:inherit;
        vertical-align: middle}
 button{outline:0}
+.on{width: 200px;
+    border: 1px solid #D2C5BD;}
 /******************** header *********************/
 #header{padding-top: 45px; margin-bottom: 25px;}
 #header::after{content: ''; display: block; clear: both;}
@@ -29,23 +31,31 @@ button{outline:0}
                }
 .header_icon{float: right; margin-right: 60px;
              }
-.search{width: 40px; height: 40px;
+/*.search{width: 40px; height: 40px;
         position: absolute; top: 65px; right: 130px;
         background: url(../images/search.svg)no-repeat;
-        background-size: contain;}
-.language{position: absolute; top: 65px; right: 60px;
+        background-size: contain;}*/
+.language{position: absolute; top: 60px; right: 350px;
           width: 34px; height: 34px;
           background: url(../images/language.svg)no-repeat;
           background-size: contain;
 }
-.search_click{display: none;}
+.search{width: 300px; margin: 0 auto;
+       position: absolute; top: 56px; right: 0px;}
+.search input{width: 0; height: 30px;
+              display: none;
+              transition: 0.5s;
+              text-align: center;
+              font-size: 0.8rem;}
+.search img{width: 43px; height: 43px;}
+/*.search_click{display: none;}
 .search_click input.type_text {
       width:200px;
       height:40px;
       background-color: #e4ddda;
       border-radius: 5px;
       border:none;
-      /*border-radius: 50px;*/
+      /*border-radius: 50px;
       position: absolute; top: 63px; right: 180px;
       color: #999999; padding-left:30px;
       font-size: 0.8rem;
@@ -58,7 +68,7 @@ button{outline:0}
       font-size: 0.9rem;
       border-radius: 10px;
       border:none;
-      }
+      }*/
 /******************** nav *********************/
 /*#nav{width: auto; height: auto; float: left;}
 #nav a{font-size: 1rem; color: #694545;}
