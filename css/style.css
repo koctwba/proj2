@@ -151,7 +151,7 @@ width: 100px; height: 5px}
 content: ''; display: block;
 width: 2px; height: 16px; background-color: #A7795D;
 border-radius: 20px;
-position: absolute; top:43px; right: 662px;
+position: absolute; top:45px; right: 669px;
 transform: rotate(-25deg);
 z-index: 9999999999;
 }
@@ -159,7 +159,7 @@ z-index: 9999999999;
 content: ''; display: block;
 width: 2px; height: 16px; background-color: #A7795D;
 border-radius: 20px;
-position: absolute; top:56px; right: 662px;
+position: absolute; top:58px; right: 669px;
 transform: rotate(25deg);
 z-index: 9999999999;
 }
