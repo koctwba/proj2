@@ -151,8 +151,9 @@ button{outline:0}
                  
                 }                 
 .products_explore{width: 100%; /*height: 630px;*/
-                  margin-bottom: 180px;
-                  position: relative; /*bottom: 0;*/}
+                  
+                  position: relative; /*bottom: 0;*/
+                  transform: translate(0,-450px);}
 .products_explore img{transition: 0.5s;}
 .products_explore:hover img{opacity: 0.5;}                 
 .products_explore p{

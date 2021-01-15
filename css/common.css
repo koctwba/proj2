@@ -119,8 +119,14 @@ button{outline:0}
         background-color: #D2C5BD;}
 #footer::after{content: ''; clear: both; display: block;}
 #footer .info{margin-left: 40px;}
-#footer .info > li{float: left; margin-top: 90px;
-                  font-size: 1rem; color: #777777;}
+#footer .info::after{content: ''; display: block; clear: both;}
+#footer .info > li{float: left; width: 300px;
+                   /*display: inline-block;*/
+                   margin-top: 90px;
+                   font-size: 1rem; color: #777777;}
+#footer .contact{float: left;}
+#footer .legal{float: left;} 
+#footer .careers{float: left;}                    
 #footer .info ul:after{content: ''; display: block; clear: both;}
 #footer .info .info_list{
         font-size: 0.9rem; color: #777777;
@@ -130,6 +136,7 @@ button{outline:0}
         margin-right: 40px;
         border-right: 1px solid #8D7262;
         }
+#footer .info .info_list:last-child{margin-right: 0;}
 #footer .info .info_list li{margin-bottom: 20px;}
 .top{width: 50px; height: 65px; background-color: #95340A;
      border: none; color: #fff;

@@ -31,6 +31,12 @@ $(function(){
         sta = 1;
       }
      })
+      
+     /*$('#product-carousel li').each(function(){
+       $(this).hover(function(){
+         $('#product-carousel li p').fadeIn();
+       },function(){});
+     })*/
 
 $(document).ready(function() {
     var wd = $(window);

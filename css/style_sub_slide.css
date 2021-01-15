@@ -5,7 +5,7 @@
 }
 
 #product-carousel {
-  height: 45vw;
+  height: 30vw;
   margin: 50px 0 0;
   list-style: none;
   position: relative;
@@ -48,16 +48,25 @@
   -webkit-transform: translateX(-50%) scale(0.7) translate3d(-240%, -10%, 0);
           transform: translateX(-50%) scale(0.7) translate3d(-240%, -10%, 0);
 }
+/*
+#product-carousel li.item-5:hover img{opacity: 0.7;}
+#product-carousel li p{display: none;}
+#product-carousel li.item-5:hover p{
+  display: none;
+  color: #AF8B76; transform: translate(55px,100px);
+  line-height: 24px; text-align: center;}*/
 #product-carousel li:after {
   content: '';
   position: absolute;
-  top: -80px;
+  top: -5%;
   left: 50px;
   display: block;
   width: 100%;
   height: 100%;
   background: url(https://www.7up.com/images/bottle-shadow.png) no-repeat 50% 85%;
   background-size: 100% auto;
+  opacity: 0.7;
+  z-index: -1;
 }
 #product-carousel li:hover img {
   -webkit-transform: translateY(-15px);
@@ -80,11 +89,11 @@
 #product-carousel-nav .carousel-nav {
   position: absolute;
   z-index: 4;
-  top: 45%;
+  top: 40%;
   width: 50px;
   height: 50px;
-  border-top: 2px solid #009e5f;
-  border-right: 2px solid #009e5f;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
   border-bottom: none;
   border-left: none;
   background-color: transparent;
@@ -92,19 +101,20 @@
   cursor: pointer;
 }
 #product-carousel-nav .carousel-nav.prev {
-  left: -35%;
+  left: -45%;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
 #product-carousel-nav .carousel-nav.next {
-  right: -35%;
+  right: -45%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 #carousel-dots {
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
+  left: 25px;
   width: 100%;
   z-index: 2;
 }
@@ -123,5 +133,5 @@
   cursor: pointer;
 }
 #carousel-dots ul li.active {
-  background-color: #009e5f;
+  background-color:#95340A;
 }
