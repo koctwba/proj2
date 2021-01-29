@@ -18,8 +18,6 @@ input, textarea {color:inherit;font-size:inherit;
        font-family:inherit;
        vertical-align: middle}
 button{outline:0}
-.on{width: 200px;
-    border: 1px solid #D2C5BD;}
 /******************** header *********************/
 #header{padding-top: 45px; margin-bottom: 25px;}
 #header::after{content: ''; display: block; clear: both;}
@@ -31,31 +29,23 @@ button{outline:0}
                }
 .header_icon{float: right; margin-right: 60px;
              }
-/*.search{width: 40px; height: 40px;
+.search{width: 40px; height: 40px;
         position: absolute; top: 65px; right: 130px;
         background: url(../images/search.svg)no-repeat;
-        background-size: contain;}*/
-.language{position: absolute; top: 60px; right: 350px;
+        background-size: contain;}
+.language{position: absolute; top: 65px; right: 60px;
           width: 34px; height: 34px;
           background: url(../images/language.svg)no-repeat;
           background-size: contain;
 }
-.search{width: 300px; margin: 0 auto;
-       position: absolute; top: 56px; right: 0px;}
-.search input{width: 0; height: 30px;
-              display: none;
-              transition: 0.5s;
-              text-align: center;
-              font-size: 0.8rem;}
-.search img{width: 43px; height: 43px;}
-/*.search_click{display: none;}
+.search_click{display: none;}
 .search_click input.type_text {
       width:200px;
       height:40px;
       background-color: #e4ddda;
       border-radius: 5px;
       border:none;
-      /*border-radius: 50px;
+      /*border-radius: 50px;*/
       position: absolute; top: 63px; right: 180px;
       color: #999999; padding-left:30px;
       font-size: 0.8rem;
@@ -68,7 +58,7 @@ button{outline:0}
       font-size: 0.9rem;
       border-radius: 10px;
       border:none;
-      }*/
+      }
 /******************** nav *********************/
 /*#nav{width: auto; height: auto; float: left;}
 #nav a{font-size: 1rem; color: #694545;}
@@ -83,7 +73,7 @@ button{outline:0}
 #header #nav{clear: both;top: -30px;left: 250px;}
 #nav{position: relative;}
 #nav .inner{position: static;}
-#nav .depth1{position: static;}
+#nav .depth1{position: static; height: 30px;}
 #nav .depth1 span{color: #95340A;
       border-bottom: 2px solid #BF8460;
       padding-bottom: 5px;}
@@ -119,14 +109,8 @@ button{outline:0}
         background-color: #D2C5BD;}
 #footer::after{content: ''; clear: both; display: block;}
 #footer .info{margin-left: 40px;}
-#footer .info::after{content: ''; display: block; clear: both;}
-#footer .info > li{float: left; width: 300px;
-                   /*display: inline-block;*/
-                   margin-top: 90px;
-                   font-size: 1rem; color: #777777;}
-#footer .contact{float: left;}
-#footer .legal{float: left;} 
-#footer .careers{float: left;}                    
+#footer .info > li{float: left; margin-top: 90px;
+                  font-size: 1rem; color: #777777;}
 #footer .info ul:after{content: ''; display: block; clear: both;}
 #footer .info .info_list{
         font-size: 0.9rem; color: #777777;
@@ -136,7 +120,6 @@ button{outline:0}
         margin-right: 40px;
         border-right: 1px solid #8D7262;
         }
-#footer .info .info_list:last-child{margin-right: 0;}
 #footer .info .info_list li{margin-bottom: 20px;}
 .top{width: 50px; height: 65px; background-color: #95340A;
      border: none; color: #fff;
