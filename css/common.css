@@ -42,23 +42,25 @@ button{outline:0}
 .search_click input.type_text {
       width:200px;
       height:40px;
-      background-color: #e4ddda;
-      border-radius: 5px;
-      border:none;
-      /*border-radius: 50px;*/
+      /*background-color: #e4ddda;*/
+      border-radius: 50px;
+      border:1px solid #D2C5BD;
       position: absolute; top: 63px; right: 180px;
-      color: #999999; padding-left:30px;
+      color: #333; padding-left:30px;
       font-size: 0.8rem;
       }
 .search_click input.type_btn {
       position:absolute; top:67px; right:185px;
       display:block;
       width:42px; height:32px;
-      background-color: #aca8a7; color: #5c5a5a;
-      font-size: 0.9rem;
-      border-radius: 10px;
+      background-color: #95340A; color: #EDE6E2;
+      font-size: 0.85rem;
+      border-radius: 50px;
       border:none;
       }
+.search_click input::placeholder{
+      color: #cecece;
+}
 /******************** nav *********************/
 /*#nav{width: auto; height: auto; float: left;}
 #nav a{font-size: 1rem; color: #694545;}
