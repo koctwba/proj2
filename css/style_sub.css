@@ -65,10 +65,20 @@ button{outline:0}
              margin-bottom: 10px;
              margin-right: 50px;
             /*position: absolute; top: 185px; right: 180px;*/}
-.title_r{font-size: 0.8rem; color: #95340A;
-         float: right;padding-right: 50px;
-         padding-top: 40px;}
 
+.title_box{
+   width: 100%;
+}
+.title_box:after{
+   content: ''; display: block; clear: both;
+}
+.title_r{font-size: 0.8rem; color: #880900;
+         float: right;padding-right: 50px;
+         padding-top: 40px;
+         transition: 0.5s;}
+.title_r:hover{
+   color: #C9A994;
+}
 .title_line{color: #444444; font-size: 1.5rem;
    font-family: adobe-caslon-pro, serif;
    /*position: relative;left: 100px; top: 10px;*/}
@@ -88,6 +98,21 @@ button{outline:0}
 .title h3{font-weight: normal; font-size: 1rem; color: #707070;
         display: inline-block;
         margin-left: 8px;}
+
+.product:last-child{
+   margin-bottom: 5rem;
+}
+.product h4{
+   text-align: center;
+   margin-top: 2rem;
+   font-size: 0.9rem; color: #C9A994;
+   font-weight: 100;
+}
+/*.slick-prev{
+   color: red;
+   background: url(../images/story_arr.svg)no-repeat;
+   background-size: contain;
+}*/
 /************* sub2 ****************/
 .sub{width: 100%;}
 .products{width: 100%;}

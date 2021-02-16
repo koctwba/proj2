@@ -141,4 +141,29 @@ border: none;}
 #sec3 .slick-dots li.slick-active button{
     transition: 0.7s;
     width: 60px; background-color: #AC4416;}
+/****** sub ******/
+.product .slick-prev{
+    width: 50px; height: 10px;
+    background: url(../images/story_arr_l.svg)no-repeat;
+    background-position: 0 0; text-indent: -999999;
+    background-size: contain;
+    filter: invert(87%) sepia(1%) saturate(941%) hue-rotate(315deg) brightness(86%) contrast(81%);
+    position: absolute; top: 50%; left: -60px;}
+.product .slick-next{
+    width: 50px; height: 10px;
+    background: url(../images/story_arr.svg)no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    filter: invert(87%) sepia(1%) saturate(941%) hue-rotate(315deg) brightness(86%) contrast(81%);
+    position: absolute; top:50%; right: -70px;}
+.product .slick-dots li button{
+  width: 20px; height: 1px;
+  background-color: #b2b2b2;
+  transition: 0.5s;
+}
+.product .slick-dots li.slick-active button{
+  width: 35px;
+  background-color: #AC4416; 
+  transition: 0.5s;
+}   
 
