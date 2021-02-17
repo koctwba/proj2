@@ -104,8 +104,9 @@ button{outline:0}
 }
 .product h4{
    text-align: center;
-   margin-top: 2rem;
-   font-size: 0.9rem; color: #C9A994;
+   margin-top: 6rem;
+   margin-bottom: 2rem;
+   font-size: 0.9rem; color: #552200;
    font-weight: 100;
 }
 /*.slick-prev{
